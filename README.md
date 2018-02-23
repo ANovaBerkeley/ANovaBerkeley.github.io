@@ -1,2 +1,2 @@
 # anohacks
-ANova Hacks 2018 
+The live site for UC Berkeley's premier high school hackathon !!!
