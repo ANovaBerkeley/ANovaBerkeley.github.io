@@ -11,6 +11,8 @@ html,body {
 		size: 100px;
 	}
 	background: black;
+
+  overflow-x: hidden;
 }
 #content-body {
 	width: 100%;
@@ -107,6 +109,33 @@ html,body {
 			}
 		}
 	}
+
+  .sponsors-body {
+    position: absolute;
+    margin: 0 auto; 
+    width: 100%;
+    text-align: center;
+
+    .sponsors-spine {
+
+      text-align: center;
+      width: 100%;
+
+      .sponsors-item {
+        display: inline-block;
+        font-size: 80px;
+      }
+
+      img {
+        object-fit: cover;
+        height: 100px;
+
+        opacity: 0;
+        animation: fade-in 0.5s ease 2s;
+        animation-fill-mode: forwards;
+      }
+    }
+  }
 }
 
 $thick : 3px;

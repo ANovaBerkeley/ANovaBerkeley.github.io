@@ -5,7 +5,8 @@ html, body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   font-size: 100px;
-  background: black; }
+  background: black;
+  overflow-x: hidden; }
 
 #content-body {
   width: 100%;
@@ -82,6 +83,23 @@ html, body {
       #content-body .text-body #nav-spine .nav-item {
         font-size: 30px;
         margin-left: 81px; }
+  #content-body .sponsors-body {
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center; }
+    #content-body .sponsors-body .sponsors-spine {
+      text-align: center;
+      width: 100%; }
+      #content-body .sponsors-body .sponsors-spine .sponsors-item {
+        display: inline-block;
+        font-size: 80px; }
+      #content-body .sponsors-body .sponsors-spine img {
+        object-fit: cover;
+        height: 100px;
+        opacity: 0;
+        animation: fade-in 0.5s ease 2s;
+        animation-fill-mode: forwards; }
 
 a {
   cursor: pointer;
