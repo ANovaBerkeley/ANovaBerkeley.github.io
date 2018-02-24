@@ -96,12 +96,13 @@ html,body {
 
 	#nav-spine {
 		position: relative;
-    top: 20px;
+    top: -40px;
     height: 100px;
     width: 100%;
+    opacity: 0;
     text-align: center;
-		// animation: fade-in 0.5s ease 1.5s;
-		// animation-fill-mode: forwards;
+    animation: fade-down 0.5s ease 1s;
+    animation-fill-mode: forwards;
 
 		.nav-item {
 			font-size: 25px;
@@ -144,7 +145,7 @@ html,body {
         line-height: -100px;
 
         opacity: 0;
-        animation: fade-in2 0.5s ease 2s;
+        animation: fade-in 0.5s ease 1s;
         animation-fill-mode: forwards;
       }
 
@@ -159,14 +160,18 @@ html,body {
         height: 75px;
 
         opacity: 0;
-        animation: fade-in2 0.5s ease 2s;
+        animation: fade-in 0.5s ease 1s;
         animation-fill-mode: forwards;
 
         transition: 0.3s;
+        cursor: pointer;
+
+        // filter: grayscale(100%);
+        filter: blur(0px);
 
         &:hover {
           opacity: 1;
-          background: white;
+          filter: blur(5px);
         }
       }
     }
@@ -179,7 +184,6 @@ html,body {
     font-size: 125px;
   }
   #content-body #nav-spine .nav-item {
-    left: 30%;
   }
 
 
@@ -211,18 +215,19 @@ html,body {
 
   #content-body #nav-spine {
     top: 55%;
+    opacity: 0;
     height: 100px;
     width: 325px;
     margin: 0 auto;
     text-align: center;
+    animation: fade-in 0.5s ease 1s;
+    animation-fill-mode: forwards;
   }
 
   #content-body #nav-spine .nav-item {
-    opacity: 0;
     left: 0px;
     background: $light-blue;
-    animation: fade-in 0.5s ease 1s;
-    animation-fill-mode: forwards;  
+    opacity: 1;
   }
 
   #content-body .text-body {
@@ -242,8 +247,9 @@ html,body {
 		opacity: 1;
 	}
 }
-@keyframes fade-in2 {
+@keyframes fade-down {
   to {
     opacity: 1;
+    top: 20px;
   }
 }

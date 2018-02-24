@@ -73,10 +73,13 @@ html, body {
       animation-fill-mode: forwards; }
   #content-body #nav-spine {
     position: relative;
-    top: 20px;
+    top: -40px;
     height: 100px;
     width: 100%;
-    text-align: center; }
+    opacity: 0;
+    text-align: center;
+    animation: fade-down 0.5s ease 1s;
+    animation-fill-mode: forwards; }
     #content-body #nav-spine .nav-item {
       font-size: 25px;
       height: 40px;
@@ -107,7 +110,7 @@ html, body {
         display: inline-block;
         line-height: -100px;
         opacity: 0;
-        animation: fade-in2 0.5s ease 2s;
+        animation: fade-in 0.5s ease 1s;
         animation-fill-mode: forwards; }
       #content-body .sponsors-body .sponsors-spine .sponsors-item {
         display: inline-block;
@@ -117,19 +120,18 @@ html, body {
         object-fit: cover;
         height: 75px;
         opacity: 0;
-        animation: fade-in2 0.5s ease 2s;
+        animation: fade-in 0.5s ease 1s;
         animation-fill-mode: forwards;
-        transition: 0.3s; }
+        transition: 0.3s;
+        cursor: pointer;
+        filter: blur(0px); }
         #content-body .sponsors-body .sponsors-spine img:hover {
           opacity: 1;
-          background: white; }
+          filter: blur(5px); }
 
 @media (max-width: 1300px) {
   #content-body .text-body .text-header {
-    font-size: 125px; }
-
-  #content-body #nav-spine .nav-item {
-    left: 30%; } }
+    font-size: 125px; } }
 @media (max-width: 1000px) {
   #content-body .text-body .text-header {
     font-size: 100px; }
@@ -149,17 +151,18 @@ html, body {
 
   #content-body #nav-spine {
     top: 55%;
+    opacity: 0;
     height: 100px;
     width: 325px;
     margin: 0 auto;
-    text-align: center; }
-
-  #content-body #nav-spine .nav-item {
-    opacity: 0;
-    left: 0px;
-    background: #A5CEDA;
+    text-align: center;
     animation: fade-in 0.5s ease 1s;
     animation-fill-mode: forwards; }
+
+  #content-body #nav-spine .nav-item {
+    left: 0px;
+    background: #A5CEDA;
+    opacity: 1; }
 
   #content-body .text-body {
     top: 20%; }
@@ -170,8 +173,9 @@ html, body {
 @keyframes fade-in {
   to {
     opacity: 1; } }
-@keyframes fade-in2 {
+@keyframes fade-down {
   to {
-    opacity: 1; } }
+    opacity: 1;
+    top: 20px; } }
 
 /*# sourceMappingURL=style.css.map */
