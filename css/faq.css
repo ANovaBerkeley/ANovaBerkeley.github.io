@@ -21,6 +21,10 @@ body {
 	color: white;
 }
 
+#apply {
+	margin-top:10px;
+}
+
 .content-body {
 	background-color: #A5CEDA;
 	height: 100%;
