@@ -1,0 +1,35 @@
+#header{
+}
+#header-logo {
+  max-width: 70%;
+  position: relative;
+  margin-bottom:0px;
+}
+#header-title {
+  color:black;
+}
+
+#header-tagline {
+  position: relative;
+  top: -200px;
+}
+
+#apply {
+  margin-top: 40px;
+  width: 200px;
+  height: 45px;
+}
+
+#about-one {
+  margin: 70px;
+}
+#about-two {
+  padding: 10px;
+  margin-top: 120px;
+  margin-bottom:120px;
+}
+#about-three {
+  padding: 10px;
+  margin-top: 120px;
+  margin-bottom:120px;
+}
