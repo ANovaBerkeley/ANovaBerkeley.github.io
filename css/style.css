@@ -8,6 +8,10 @@
 #header-title {
   color:black;
 }
+#header-deadline{
+  color:black;
+  margin-top:30px
+}
 
 #header-tagline {
   position: relative;
