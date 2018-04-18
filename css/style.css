@@ -1,3 +1,20 @@
+.runnerups {
+  margin-top: 70px;
+}
+
+.winners {
+  background: #9EDAE0;
+  padding: 15px;
+  margin-bottom: 30px;
+  color: white;
+  border-bottom: #39375B;
+  border-bottom-style: solid;
+  border-bottom-width: 5px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+
+}
+
 #workshops {
   margin-top: 30px;
   margin-bottom: 30px;
